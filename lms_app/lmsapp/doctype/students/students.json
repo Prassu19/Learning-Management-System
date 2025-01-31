@@ -1,0 +1,171 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:student",
+ "creation": "2025-01-27 07:31:54.440498",
+ "default_view": "List",
+ "doctype": "DocType",
+ "document_type": "System",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "student",
+  "enrollment_date",
+  "student_id",
+  "address",
+  "gender",
+  "age",
+  "national_id",
+  "column_break_0sknm",
+  "email_address",
+  "phone_number",
+  "grade",
+  "section",
+  "roll_number",
+  "subjects",
+  "academic_year",
+  "parentguardian",
+  "amended_from",
+  "student_progress",
+  "total_marks",
+  "obtained_marks"
+ ],
+ "fields": [
+  {
+   "fieldname": "student",
+   "fieldtype": "Data",
+   "label": "Student Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "enrollment_date",
+   "fieldtype": "Date",
+   "label": "    Enrollment Date"
+  },
+  {
+   "fieldname": "student_id",
+   "fieldtype": "Data",
+   "label": "    Student Id"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "    Address"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "    Gender",
+   "options": "\nMale\nFemale\nOthers"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "    Age"
+  },
+  {
+   "fieldname": "national_id",
+   "fieldtype": "Select",
+   "label": "    National Id",
+   "options": "\nIndia\nOthers"
+  },
+  {
+   "fieldname": "column_break_0sknm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "    Email Address"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "label": "    Phone Number"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Select",
+   "label": "    Grade",
+   "options": "\nGrade A\nGrade B\nGrade C\nGrade D"
+  },
+  {
+   "fieldname": "section",
+   "fieldtype": "Select",
+   "label": "    Section",
+   "options": "\nSection A\nSection B\nSection C"
+  },
+  {
+   "fieldname": "roll_number",
+   "fieldtype": "Data",
+   "label": "    Roll Number"
+  },
+  {
+   "fieldname": "subjects",
+   "fieldtype": "Select",
+   "label": "    Subjects",
+   "options": "\nMaths\nPhysics\nEnglish"
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Date",
+   "label": "    Academic Year"
+  },
+  {
+   "fieldname": "parentguardian",
+   "fieldtype": "Data",
+   "label": "    Parent Guardian"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Students",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "student_progress",
+   "fieldtype": "Data",
+   "label": "Student Progress"
+  },
+  {
+   "fieldname": "total_marks",
+   "fieldtype": "Int",
+   "label": "Total Marks"
+  },
+  {
+   "fieldname": "obtained_marks",
+   "fieldtype": "Int",
+   "label": "obtained_marks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-01-30 13:53:19.212347",
+ "modified_by": "Administrator",
+ "module": "lmsapp",
+ "name": "Students",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

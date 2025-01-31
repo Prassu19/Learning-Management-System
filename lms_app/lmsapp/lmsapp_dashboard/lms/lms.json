@@ -1,0 +1,33 @@
+{
+ "cards": [
+  {
+   "card": "Active Project"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Active course",
+   "width": "Half"
+  },
+  {
+   "chart": "Enrollment student",
+   "width": "Half"
+  },
+  {
+   "chart": "Assessments",
+   "width": "Half"
+  }
+ ],
+ "creation": "2025-01-27 11:13:59.978366",
+ "dashboard_name": "LMS",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2025-01-30 08:19:38.308325",
+ "modified_by": "Administrator",
+ "module": "lmsapp",
+ "name": "LMS",
+ "owner": "Administrator"
+}

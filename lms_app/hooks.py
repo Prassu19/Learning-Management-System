@@ -124,6 +124,33 @@ app_license = "y"
 # 	}
 # }
 
+
+# In your custom app's hooks.py file
+
+# In your custom app's hooks.py file
+
+# hooks.py
+doc_events = {
+    "Assessments": {
+        "after_insert": "lms_app.lmsapp.doctype.assessments.assessments.validate_grading",
+        "on_update": "lms_app.lmsapp.doctype.assessments.assessments.validate_grading"
+    }
+}
+
+
+
+
+
+
+
+# In your Assessments Doctype Python file
+# hooks.py
+ 
+
+
+
+
+
 # Scheduled Tasks
 # ---------------
 
@@ -144,6 +171,15 @@ app_license = "y"
 # 		"lms_app.tasks.monthly"
 # 	],
 # }
+
+
+
+
+scheduler_events = {
+    "daily": [
+        "lms_app.tasks.send_assessment_notification"
+    ]
+}
 
 # Testing
 # -------

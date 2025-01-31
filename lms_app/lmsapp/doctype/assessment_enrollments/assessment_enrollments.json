@@ -1,0 +1,146 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:course",
+ "creation": "2025-01-29 07:35:49.224922",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "course",
+  "member_type",
+  "member",
+  "enrollment_date",
+  "age",
+  "email_address",
+  "gender",
+  "national_id",
+  "address",
+  "column_break_bvl0p",
+  "current_lesson",
+  "progress",
+  "completion_date",
+  "section_break_osjfh",
+  "completion_status",
+  "payment_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "course",
+   "fieldtype": "Link",
+   "label": "Course ",
+   "options": "Course Assessment",
+   "unique": 1
+  },
+  {
+   "fieldname": "member_type",
+   "fieldtype": "Select",
+   "label": "member_type",
+   "options": "\nStudent\nInstructor\nAdmin\nTeaching Assistant"
+  },
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "member",
+   "options": "Students",
+   "unique": 1
+  },
+  {
+   "fieldname": "enrollment_date",
+   "fieldtype": "Date",
+   "label": "Enrollment Date"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "label": "Age",
+   "read_only": 1
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "    Email Address",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "Gender",
+   "read_only": 1
+  },
+  {
+   "fieldname": "national_id",
+   "fieldtype": "Data",
+   "label": "    National Id",
+   "read_only": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_bvl0p",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "course.course_category",
+   "fieldname": "current_lesson",
+   "fieldtype": "Data",
+   "label": "current_lesson"
+  },
+  {
+   "fieldname": "progress",
+   "fieldtype": "Data",
+   "label": "progress"
+  },
+  {
+   "fieldname": "completion_date",
+   "fieldtype": "Date",
+   "label": "completion_date"
+  },
+  {
+   "fieldname": "section_break_osjfh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "completion_status",
+   "fieldtype": "Select",
+   "label": "completion_status",
+   "options": "\nCompleted\nIn Progress\nNot Started\nFailed"
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "label": "payment_status",
+   "options": "\nPaid\nPending\nRefunded\nFree"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-30 08:15:29.458540",
+ "modified_by": "Administrator",
+ "module": "lmsapp",
+ "name": "Assessment Enrollments",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

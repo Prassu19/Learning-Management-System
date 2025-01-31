@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:course_name",
+ "creation": "2025-01-29 06:35:24.104935",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "course_id",
+  "course_name",
+  "start_date",
+  "column_break_884rr",
+  "end_date",
+  "instructor",
+  "course_category",
+  "section_break_ebjrk",
+  "course_mode",
+  "course_fee",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "course_id",
+   "fieldtype": "Data",
+   "label": "Course_Id"
+  },
+  {
+   "fieldname": "course_name",
+   "fieldtype": "Data",
+   "label": "Course Name ",
+   "unique": 1
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "column_break_884rr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "instructor",
+   "fieldtype": "Data",
+   "label": "Instructor"
+  },
+  {
+   "fieldname": "course_category",
+   "fieldtype": "Data",
+   "label": "Course Category"
+  },
+  {
+   "fieldname": "section_break_ebjrk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "course_mode",
+   "fieldtype": "Select",
+   "label": "Course Mode",
+   "options": "\nOnline\nIn-Person\nBlended"
+  },
+  {
+   "fieldname": "course_fee",
+   "fieldtype": "Data",
+   "label": "Course Fee"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nActive\nArchived\nCompleted\nPending"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-30 08:14:26.629547",
+ "modified_by": "Administrator",
+ "module": "lmsapp",
+ "name": "Course Assessment",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,32 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "condition": "doc.enrollment_date==nowdate()",
+ "creation": "2025-01-28 12:05:54.501915",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Students",
+ "enabled": 1,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Enrollment Students",
+ "modified": "2025-01-30 08:20:19.285611",
+ "modified_by": "Administrator",
+ "module": "lmsapp",
+ "name": "Enrollment Student",
+ "owner": "Administrator",
+ "property_value": "Submitted",
+ "recipients": [
+  {
+   "condition": "",
+   "receiver_by_document_field": "owner",
+   "receiver_by_role": "System Manager"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "set_property_after_alert": "enrollment_date",
+ "subject": "{{ doc.enrollment_date }} "
+}

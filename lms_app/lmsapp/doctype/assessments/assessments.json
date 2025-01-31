@@ -1,0 +1,152 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:assessment_title",
+ "creation": "2025-01-27 08:18:13.932518",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "assessment_title",
+  "assessment_type",
+  "type",
+  "attach",
+  "total_marks",
+  "column_break_ojayw",
+  "due_date",
+  "assessment_status",
+  "section_break_zhhgr",
+  "obtained_marks",
+  "attempts_allowed",
+  "grading",
+  "question",
+  "answer",
+  "status",
+  "comments",
+  "percentage",
+  "grading_criteria"
+ ],
+ "fields": [
+  {
+   "fieldname": "assessment_title",
+   "fieldtype": "Data",
+   "label": "Assessment Title",
+   "unique": 1
+  },
+  {
+   "fieldname": "assessment_type",
+   "fieldtype": "Select",
+   "label": "Assessment Type",
+   "options": "\nQuiz\nAssignment\nFinal\nExam\nProject"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "\nDocument\nPDF\nURL\nImage\nText"
+  },
+  {
+   "fieldname": "attach",
+   "fieldtype": "Attach"
+  },
+  {
+   "fieldname": "total_marks",
+   "fieldtype": "Int",
+   "label": "Total Marks"
+  },
+  {
+   "fieldname": "column_break_ojayw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date"
+  },
+  {
+   "fieldname": "assessment_status",
+   "fieldtype": "Select",
+   "label": "Assessment Status",
+   "options": "\nActive\nCompleted\nPending\nArchived"
+  },
+  {
+   "fieldname": "section_break_zhhgr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "obtained_marks",
+   "fieldtype": "Int",
+   "label": "Obtained Marks"
+  },
+  {
+   "default": "5",
+   "fieldname": "attempts_allowed",
+   "fieldtype": "Data",
+   "label": "Attempts Allowed"
+  },
+  {
+   "fieldname": "grading",
+   "fieldtype": "Data",
+   "label": "Grading",
+   "options": "\nA\nA+\nB\nC\nD\nF"
+  },
+  {
+   "fieldname": "question",
+   "fieldtype": "Data",
+   "label": "Question"
+  },
+  {
+   "fieldname": "answer",
+   "fieldtype": "Text Editor",
+   "label": "Answer"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nPass\nFail\nNot Graded\nNot Applicable\nPending"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Data",
+   "label": "Comments"
+  },
+  {
+   "fieldname": "percentage",
+   "fieldtype": "Percent",
+   "label": "Percentage"
+  },
+  {
+   "fieldname": "grading_criteria",
+   "fieldtype": "Table",
+   "label": "Grading Criteria",
+   "options": "Grading Criteria"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-30 12:37:10.573085",
+ "modified_by": "Administrator",
+ "module": "lmsapp",
+ "name": "Assessments",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -4,12 +4,10 @@ import frappe
     
 
 def send_assessment_notification(doc):
-    """Send an email notification to the student with the assessment results."""
-    # Fetch student email and name from the Students Doctype
     student_email = frappe.db.get_value("Students", doc.student, "email_address")
     student_name = frappe.db.get_value("Students", doc.student, "student")
 
-    # Logging to confirm email fetching
+    
     frappe.logger().info(f"Student email: {student_email} for {doc.assessment_title}")
 
     if student_email:
@@ -36,5 +34,5 @@ def send_assessment_notification(doc):
             message=message
         )
     else:
-        # Logging if email is not found
+
         frappe.logger().error(f"Could not find email for student {doc.student} in assessment {doc.assessment_title}")
